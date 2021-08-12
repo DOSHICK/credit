@@ -1,0 +1,105 @@
+/*     offer styles       */
+.offer{
+    box-sizing: border-box;
+    padding: 20px 0px 50px 0px;
+    max-width: 700px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.offer__title {
+    margin: 20px 0px 0px 0px;
+}
+.offer__info {
+    background: #FDE500;
+    border-radius: 5px;
+    transform: rotate(-4deg);
+    padding: 20px 15px 20px 15px;
+    margin: 15px 0px 40px 0px;
+    max-width: 550px;
+    text-align: center;
+    @media only screen and (max-width: 400px) {
+        font-size: 20px;
+        line-height: 21px;
+    }  
+    @media only screen and (max-width: 320px) {
+        font-size: 15px;
+        line-height: 18px;
+    } 
+
+
+}
+.offer__text {
+    color: #333333;
+    font-style: italic;
+}
+.offer__block {
+    background: #fff;
+
+    max-width: 420px;
+    display: grid;
+    grid-template-columns:  7px 400px 7px;
+    grid-template-rows:     7px 200px 7px;
+
+    grid-template-areas:    "hor1   hor1    hor1"
+                            "ver1   item    ver2"
+                            "hor2   hor2    hor2";
+
+    @media only screen and (max-width: 400px) {
+        grid-template-columns:  7px 274px 7px;
+        grid-template-rows:     7px 130px 7px;
+
+    } 
+}
+.offer__stripe_horizontal {
+    max-height: 7px;
+    max-width: 425px;
+    width: 520px;
+    @media only screen and (max-width: 400px) {
+        max-width: 300px;
+    } 
+}
+.offer__stripe_horizontal_1{
+    grid-area: hor1;
+}
+.offer__stripe_horizontal_2{
+    grid-area: hor2;
+}
+.offer__stripe_vertical {
+    transform: rotate(90deg) translateX(100px) translateY(107px);
+    max-width: 220px;
+    min-height: 7px;
+    @media only screen and (max-width: 400px) {
+        max-width: 140px;
+        transform: rotate(90deg) translateX(65px) translateY(70px);
+    } 
+}
+.offer__stripe_vertical_1{
+    grid-area: ver1;
+}
+.offer__stripe_vertical_2{
+    grid-area: ver2;
+    transform: rotate(90deg) translateX(100px) translateY(106px);
+    @media only screen and (max-width: 400px) {
+        max-width: 140px;
+        transform: rotate(90deg) translateX(65px) translateY(65px);
+    } 
+}
+.offer__item {
+    grid-area: item;
+    padding: 26px 16px 26px 16px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+    text-align: center;
+    color: #333333;
+    @media only screen and (max-width: 400px) {
+        padding: 10px 16px 10px 16px;
+    } 
+
+}
+.offer__item__text {
+    margin: 0px 0px 15px 0px;
+}

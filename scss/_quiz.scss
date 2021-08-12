@@ -1,0 +1,123 @@
+/*      quiz styles     */
+
+#quiz{
+    display: none;
+}
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.from{
+    .button__case{
+        max-width: 419px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .btn_quiz{
+            max-height: 60px;
+            max-width: 133px;
+            padding: 8px 22px 8px 22px;
+            @media only screen and (max-width: 400px) {
+                max-width: 123px;
+                max-height: 60px;
+            }
+        }
+    }
+}
+
+.section-wrapper{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 40px 10px 50px 0px;
+    min-width: 520px;
+    min-height: 430px;
+    width: 520px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #FFFFFF;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    .quiz__counter{
+        font-size: 18px;
+        line-height: 22px;
+        @media only screen and (max-width: 400px) {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+    h4{
+        margin: 5px 0px 20px 0px;
+    }
+
+    @media only screen and (max-width: 780px) {
+        width: 100%;
+        min-width: fit-content;
+        padding: 40px 20px 50px 20px;
+
+    }
+}
+
+.button__case {
+    box-sizing: border-box;
+    padding: 0px 0px 20px 0px;
+    max-width: 272px;
+    min-height: 280px;
+    max-height: 280px;
+    .btn_quiz {
+        width: 100%;
+        font-weight: 400;
+        font-size: 18px;
+        margin: 0px 0px 10px 0px;
+        padding: 16px 0px 16px 0px;
+
+        background: #FAFAFA;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            transform: scale(1.2, 1.2);
+        }
+    }
+}
+
+.prev {
+    position: absolute;
+    top: calc(100% - 55px);
+    height: 22px;
+    width: 66px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 18px;
+    color: #D10A12;
+
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    &:hover{
+        img{
+            transform: translateX(-15px);
+        }
+    }
+    img{
+        margin: 0px 7px 2px 0px;
+        transition: all 0.3s ease 0s;
+    }
+}
